@@ -3,6 +3,6 @@
     "description": "JoeBoy Organization CI starter workflow.",
     "iconName": "dotnet",
     "categories": [
-        "Continuous integration", "DotNet"
+        "c#"
     ]
 }
