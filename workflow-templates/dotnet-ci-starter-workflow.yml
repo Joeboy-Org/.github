@@ -34,9 +34,12 @@ jobs:
       - name: Test with the dotnet CLI
         run: dotnet test
 
+      - name: Publish
+        run: dotnet publish CICDDemo.csproj --output ./build-${{ matrix.dotnet-version }}
+
       - name: Archive Test Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: dotnet-results-${{ matrix.dotnet-version }}
-          path: TestResults-${{ matrix.dotnet-version }}
+          path: ./build-${{ matrix.dotnet-version }}
