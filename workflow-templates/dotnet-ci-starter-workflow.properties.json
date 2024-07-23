@@ -1,6 +1,6 @@
 {
     "name": "Joeboy DotNet CI",
-    "description": "Octo Organization CI starter workflow.",
+    "description": "JoeBoy Organization CI starter workflow.",
     "iconName": "dotnet",
     "categories": [
         "Continuous integration", "DotNet"
